@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.car{
+
+    &--name { 
+        color: rgb(81, 162, 255);
+        padding-bottom: 20px; 
+        text-align: center; 
+        font-size: 30px;
+      }
+}
+
+@media screen and (max-width:800px) {
+    .car, .search, .card {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+@media screen and (max-width:500px) {
+     .search {
+        width: 68%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}

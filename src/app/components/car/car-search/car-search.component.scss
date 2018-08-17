@@ -1,0 +1,42 @@
+.search { 
+    position: relative;
+    margin: auto;
+    top: 10px; 
+    left: 40px; 
+    width: 40%;
+    padding: 7px;
+    background: rgb(81, 162, 255);
+    color: white;
+    border-radius: 4px;
+   
+    &--icon { 
+      display: inline-block; 
+      position: relative; 
+      left: 15px; 
+      vertical-align: middle; 
+      width: 20px; 
+      height: 20px; 
+    } 
+   
+    &--input { 
+      box-sizing: border-box; 
+      display: inline-block; 
+      border: 0px solid rgb(81, 162, 255); 
+      background:rgb(81, 162, 255);
+      color: white;
+      width: 70%;
+      margin-left: 40px;
+    } 
+  } 
+
+
+  @media screen and (max-width:500px) {
+    .search {
+       width: 78%; /* The width is 100%, when the viewport is 800px or smaller */
+       margin-left: 0px;
+       &--input{
+        margin-left: 10px;
+        width: 78%;
+       }
+   } 
+}

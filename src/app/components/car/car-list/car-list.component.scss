@@ -1,0 +1,141 @@
+.car { 
+  height: 100%; 
+  color: rgb(0, 0, 0);
+    &--wrapper { 
+      display: inline-block; 
+      border: 1px solid rgb(167, 166, 166); 
+      margin: 20px 59px ; 
+      // width: 23.7%; 
+      padding: 0px;
+      height: 350px; 
+      border-radius: 4px;
+    
+
+    &--race { 
+      position: relative; 
+      border: 1px solid #ccc; 
+      left: 50px; 
+      width: 88%; 
+      margin: 0px 45px;
+      min-height: 80px; 
+      border-radius: 4px;
+    } 
+ 
+    &--race:nth-last-child(1) { 
+      margin-bottom: 50px; 
+    } 
+
+  } 
+   
+    &--list { 
+      margin: 40px; 
+      background-color: #ffffff; 
+    } 
+   
+    &--image { 
+      display: block; 
+      margin: auto; 
+      transform: scaleX(-1); 
+      width: 100%; 
+      height: 220px; 
+      object-fit: contain; 
+    } 
+   
+    &--name { 
+      color: rgb(81, 162, 255);
+      padding-bottom: 20px; 
+      text-align: center; 
+      font-size: 40px;
+    }
+
+    &--empty { 
+      position: relative; 
+      top: 35px; 
+      left: 40px; 
+      color: rgb(81, 162, 255);
+    }  
+
+    &--race {
+      position: absolute;
+      left: 10px;
+      transform: scaleX(-1);
+      height: 100%;
+      width: 90px;
+      object-fit: contain;
+      z-index: 1; 
+    }
+   
+    &--track {
+      margin-left: 40px;
+    }
+   
+    &__position {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 120px;
+    }
+   
+    &--start {
+      left: 0;
+      color: rgb(81, 162, 255);
+      font-size: 55px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 80px;
+      border-right: 3px solid rgb(81, 162, 255);
+    }
+
+    &--finish {
+      right: 0;
+      color: rgb(81, 162, 255);
+      font-size: 30px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 80px;
+      border-left: 3px solid rgb(81, 162, 255);
+   
+      &--icon {
+        width: 120px;
+        height: 80px;
+      }
+    }
+
+    &__place { 
+      position: absolute; 
+      right: -70px; 
+      color: rgb(81, 162, 255); 
+      vertical-align: middle; 
+      line-height: 80px; 
+    } 
+  } 
+
+  .btn { 
+    position: relative; 
+    float: right;
+    right: 88px; 
+    top: 15px;
+    margin-bottom: 40px;
+    background: rgb(81, 162, 255); 
+    padding: 6px; 
+    border-radius: 4px; 
+    color: white; 
+    
+    .btn.start{
+      margin-bottom: 40px;
+    }
+  } 
+
+.card{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width:500px) {
+  .car {
+    &--wrapper{
+      margin: 10px 0px;
+    }
+ } 
+}
